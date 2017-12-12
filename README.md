@@ -1,5 +1,5 @@
 # HybridAPI
-# Author Adam Meyers
+Author Adam Meyers
 
 Quick tool for using Hybrid Analysis API on command line.
 
