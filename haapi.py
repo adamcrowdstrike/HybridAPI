@@ -51,6 +51,7 @@ def main():
     opt.add_option("-i", "--ipv4", dest="ip", help="Query a IP against Hybrid-Analysis")
     opt.add_option("-t", "--type", dest="type", help="Query a File Type from Hybrid-Analysis")
     opt.add_option("-s", "--sha", dest="sha", help="Query a Sha256 from Hybrid-Analysis")
+    opt.add_option("-v", "--vxfamily", dest="vxfam", help="Query a VXFamuly from Hybrid-Analysis")
     options, args= opt.parse_args()
     ha=hybridapi(api,key)
     if options.dns:
@@ -78,6 +79,13 @@ def main():
         print options.sha
         if query != False:
             report(query)
+    elif options.vxfam:
+        query = ha.queryioc('vxfamily:%s' %options.vxfam)
+        print options.vxfam
+        if query != False:
+            for x in query['response']['result']:
+                report(ha.querydata(x['sha256']))
+                sleep(12)
 
 if __name__ == '__main__':
   main()
