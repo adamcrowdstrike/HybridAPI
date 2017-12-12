@@ -13,7 +13,7 @@ Step 3: Hunt adversaries!
 
 Usage: haapi.py [options]
 
-Options:
+Options:<br>
   -h, --help            show this help message and exit
   -d DNS, --dns=DNS     Query a DNS against Hybrid-Analysis
   -i IP, --ipv4=IP      Query a IP against Hybrid-Analysis
