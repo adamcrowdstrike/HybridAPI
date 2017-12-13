@@ -21,4 +21,5 @@ Options:<br>
   -i IP, --ipv4=IP      Query a IP against Hybrid-Analysis<br>
   -t TYPE, --type=TYPE  Query a File Type from Hybrid-Analysis<br>
   -s SHA, --sha=SHA     Query a Sha256 from Hybrid-Analysis<br>
- 
+  -v VXFAM, --vxfamily=VXFAM
+                        Query a VXFamuly from Hybrid-Analysis<br> 
