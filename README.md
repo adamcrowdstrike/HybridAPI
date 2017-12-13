@@ -11,6 +11,8 @@ Step 2: Add your Hybrid Analysis API and KEY to line 48
 
 Step 3: Hunt adversaries!
 
+Optional: If you are using a private cloud version change line 16 to include your private cloud instance location.
+
 Usage: haapi.py [options]
 
 Options:<br>
