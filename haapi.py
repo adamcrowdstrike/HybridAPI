@@ -86,6 +86,8 @@ def main():
             for x in query['response']['result']:
                 report(ha.querydata(x['sha256']))
                 sleep(12)
+    else:
+        opt.print_help()
 
 if __name__ == '__main__':
   main()
