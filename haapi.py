@@ -51,7 +51,7 @@ def main():
     opt.add_option("-i", "--ipv4", dest="ip", help="Query a IP against Hybrid-Analysis")
     opt.add_option("-t", "--type", dest="type", help="Query a File Type from Hybrid-Analysis")
     opt.add_option("-s", "--sha", dest="sha", help="Query a Sha256 from Hybrid-Analysis")
-    opt.add_option("-v", "--vxfamily", dest="vxfam", help="Query a VXFamuly from Hybrid-Analysis")
+    opt.add_option("-v", "--vxfamily", dest="vxfam", help="Query a VXFamily from Hybrid-Analysis")
     options, args= opt.parse_args()
     ha=hybridapi(api,key)
     if options.dns:
